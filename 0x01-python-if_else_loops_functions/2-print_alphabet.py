@@ -1,5 +1,3 @@
 #!/usr/bin/python3
-i = ord('a')
-while i < ord('z') + 1:
-    print(chr(i), end="")
-    i += 1
+for letter in range(ord('a'), ord('z') + 1):
+    print("{}".format(chr(letter)), end="")
