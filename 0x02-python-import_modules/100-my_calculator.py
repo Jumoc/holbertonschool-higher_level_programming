@@ -23,4 +23,4 @@ if __name__ == "__main__":
     elif argv[2] == operators[3]:
         result = calc.div(int(argv[1]), int(argv[3]))
         index = 3
-    print("{} {} {} = {}".format(argv[0], operators[index], argv[3], result))
+    print("{} {} {} = {}".format(argv[1], operators[index], argv[3], result))
