@@ -32,7 +32,7 @@ int is_palindrome(listint_t **head)
 	int size = 0, i = 0, j = size;
 
 	if (!*head)
-		return (0);
+		return (1);
 	size = list_len(*head);
 	if (size == 1)
 		return (1);
