@@ -12,6 +12,8 @@ def roman_to_int(roman_string):
         if index != (len(roman_string) - 1):
             if numbers.get(roman_string[index + 1]) > number:
                 result -= number
+            else:
+                result += number
         else:
-            result += number
+                result += number
     return result
