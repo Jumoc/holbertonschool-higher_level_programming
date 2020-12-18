@@ -3,13 +3,14 @@ def uniq_add(my_list=[]):
     temp = []
     result = 0
     for element in my_list:
-        if get_uniq(temp, element) == False:
+        if not get_uniq(temp, element):
             result += element
             temp.append(element)
     return result
 
+
 def get_uniq(mlist, n):
     for element in mlist:
-        if element == n:
+        if element is n:
             return True
     return False
