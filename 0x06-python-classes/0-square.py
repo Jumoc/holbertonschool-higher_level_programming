@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""Module documentation"""
+
+
 class Square():
-    """Creates a square with its equal sides"""
+    """Class that defines a Square"""
     pass
