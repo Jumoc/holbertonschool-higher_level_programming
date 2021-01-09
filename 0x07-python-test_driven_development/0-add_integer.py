@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""This is the module description"""
+"""This is the module description for add_integer"""
 
 
 def add_integer(a, b=98):
