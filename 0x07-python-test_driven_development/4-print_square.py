@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""This is the module description"""
+"""This is the module description
+    for print_square"""
 
 
 def print_square(size):
