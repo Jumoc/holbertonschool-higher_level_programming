@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""This is the module description"""
+"""This is the module description
+    matrix_divided"""
 
 
 def matrix_divided(matrix, div):
