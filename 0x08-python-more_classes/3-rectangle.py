@@ -42,9 +42,10 @@ class Rectangle():
 
     def __str__(self):
         s_rect = ""
-        for i in range(self.height):
-            for j in range(self.width):
-                s_rect += "#"
-            if i < self.height - 1:
-                s_rect += "\n"
+        if self.width != 0 or self.height != 0:
+            for i in range(self.height):
+                for j in range(self.width):
+                    s_rect += "#"
+                if i < self.height - 1:
+                    s_rect += "\n"
         return s_rect
