@@ -8,7 +8,7 @@ def add_attribute(obj, attr, value):
         obj: name of the value
         attr: value to be checked
         value: value"""
-    if hasattr(obj, attr):
+    if hasattr(obj, "__dict__"):
         raise TypeError("can't add new attribute")
     else:
         setattr(obj, attr, value)
