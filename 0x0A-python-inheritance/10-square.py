@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """This is a module definition"""
 Rectangle = __import__("9-rectangle").Rectangle
 
