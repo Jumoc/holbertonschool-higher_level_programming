@@ -23,5 +23,5 @@ class Student():
 
     def reload_from_json(self, json):
         """returns the dict of the object"""
-        self.__dict__.clear()
-        self.__dict__ = json.copy()
+        for key in json:
+            setattr(self, key, json[key])
