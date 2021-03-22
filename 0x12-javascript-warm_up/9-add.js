@@ -5,5 +5,5 @@ const n2 = parseInt(process.argv[3]);
 if (isNaN(n1) || isNaN(n2)) {
   console.log('NaN');
 } else {
-    console.log(n1 + n2);
+  console.log(n1 + n2);
 }
