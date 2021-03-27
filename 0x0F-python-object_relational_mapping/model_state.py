@@ -12,7 +12,8 @@ class State(Base):
         attributes:
             __tablename_: the name of the mapped table
             id: id of the state
-            name: name of the state"""
+            name: name of the state
+    """
     __tablename__ = 'states'
     id = Column(Integer, primary_key=True)
     name = Column(String(128), nullable=False)
