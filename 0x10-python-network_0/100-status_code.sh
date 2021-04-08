@@ -1,3 +1,3 @@
 #!/bin/bash
 # status of a request
-curl -LsI "$1" | tail -6 | head -1 | cut -d " " -f 2
+curl -s -o /dev/null -w "%{http_code}" "$1"
