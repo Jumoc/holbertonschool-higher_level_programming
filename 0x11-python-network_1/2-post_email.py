@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """hbtn header module"""
-import urllib.request, urllib.parse
+import urllib.request
+import urllib.parse
 import sys
 
 
