@@ -9,7 +9,7 @@ if __name__ == "__main__":
     letter = sys.argv[1] if len(sys.argv) > 1 else ""
     request = requests.post(url, data={'q': letter})
     r_dict = eval(request.text)
-    if r_dict is None:
+    if type(r_dict) is not dict:
         print("Not a valid JSON")
     elif r_dict.get('name') is None:
         print("No result")
