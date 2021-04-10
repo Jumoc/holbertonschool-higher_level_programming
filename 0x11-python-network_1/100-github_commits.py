@@ -10,7 +10,8 @@ if __name__ == "__main__":
     url = "https://api.github.com/repos/{}/{}/commits".format(
         name, repository
     )
-    r = requests.get(url)
+    s = requests.Session()
+    r = s.get(url)
     if (r.status_code < 400):
         # with open("commits.json", "r", encoding="utf8") as file:
         #     f_json = json.loads(file.read())
