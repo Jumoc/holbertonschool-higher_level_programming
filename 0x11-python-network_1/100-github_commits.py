@@ -11,7 +11,8 @@ if __name__ == "__main__":
         name, repository
     )
     r = requests.get(url)
-    if (r.status_code == '200'):
+    print(type(r.status_code))
+    if (r.status_code == 200):
         # with open("commits.json", "r", encoding="utf8") as file:
         #     f_json = json.loads(file.read())
 
