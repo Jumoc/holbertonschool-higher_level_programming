@@ -12,13 +12,12 @@ if __name__ == "__main__":
     )
     r = requests.get(url)
     print(type(r.status_code))
-    if (r.status_code < 400):
         # with open("commits.json", "r", encoding="utf8") as file:
         #     f_json = json.loads(file.read())
 
-        f_json = r.json()
+    f_json = r.json()
 
-        for i in range(10):
-            sha = f_json[i].get('sha')
-            name = f_json[i].get('commit').get('author').get('name')
-            print("{}: {}".format(sha, name))
+    for i in range(10):
+        sha = f_json[i].get('sha')
+        name = f_json[i].get('commit').get('author').get('name')
+        print("{}: {}".format(sha, name))
