@@ -2,7 +2,6 @@
 """hbtn status module"""
 import requests
 import sys
-import json
 
 
 if __name__ == "__main__":
@@ -12,10 +11,12 @@ if __name__ == "__main__":
         name, repository
     )
     r = requests.get(url)
-    with open("commits.json", "r", encoding="utf8") as file:
-        f_json = json.loads(file.read())
+    # with open("commits.json", "r", encoding="utf8") as file:
+    #     f_json = json.loads(file.read())
+
+    f_json = r.json()
 
     for i in range(10):
-        print("{}: ".format(f_json[i].get('sha')), end="")
-        print("{}".format(f_json[i].get('commit').get('author').get('name')))
-
+        sha = f_json[i].get('sha')
+        name = f_json[i].get('commit').get('author').get('name')
+        print("{}: {}".format(sha, name))
