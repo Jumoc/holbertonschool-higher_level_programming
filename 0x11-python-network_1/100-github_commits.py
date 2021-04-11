@@ -16,9 +16,11 @@ if __name__ == "__main__":
         # with open("commits.json", "r", encoding="utf8") as file:
         #     f_json = json.loads(file.read())
 
-        f_json = r.json()
-
-        for i in range(10):
-            sha = f_json[i].get('sha')
-            name = f_json[i].get('commit').get('author').get('name')
+        i = 0
+        for commit in r.json():
+            if i > 9:
+                break
+            sha = commit.get('sha')
+            name = commit.get('commit').get('author').get('name')
             print("{}: {}".format(sha, name))
+            i += 1
