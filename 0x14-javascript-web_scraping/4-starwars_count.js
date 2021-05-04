@@ -9,11 +9,11 @@ request(url, (err, resp, body) => {
   // console.log(JSON.parse(body));
   let counter = 0;
   for (const result of JSON.parse(body).results) {
-      result.characters.forEach(element => {
-          if (element.includes('18')) {
-              counter++;
-          }
-      });
+    result.characters.forEach(element => {
+      if (element.includes('18')) {
+        counter++;
+      }
+    });
   }
   console.log(counter);
 });
