@@ -1,1 +1,1 @@
-# 0x15. JavaScript - Web jQuery
+Project: 0x15. JavaScript - Web jQuery | Holberton Intranet
